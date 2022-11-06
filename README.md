@@ -1,7 +1,7 @@
 
 # URL Shortener
 
-Repo for storing URL Shortener project based on `FastAPI`  utilising `unicorn` web-server and running in `Docker` container
+Repo for storing URL Shortener project based on `FastAPI`  utilising `uvicorn` web-server and running in `Docker` container
 
 _________________________________________________________________________________________________________________________________________________________________
 
