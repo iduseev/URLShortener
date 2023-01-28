@@ -1,6 +1,19 @@
-from typing import AnyStr
-from pydantic import BaseModel, Field
+# backend/models.py
 
-class CreateURLShortener(BaseModel):
-    url: AnyStr
-    
+from sqlalchemy import Boolean, Column, Integer, String
+
+from .database import Base
+
+'''
+    Decalre the way the data should be stored in the DB
+'''
+
+class URL(Base):
+    __tablename__ = "urls"
+
+    id = Column(Integer, primary_key=True)
+    key = Column(String, unique=True, index=True)
+    secret_key = Column(String, unique=True, index=True)
+    target_url = Column(String, index=True)
+    is_active = Column(Boolean, default=True)
+    clicks=Column(Integer, default=0)

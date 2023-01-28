@@ -1,8 +1,11 @@
 
 # URL Shortener
 
-Repo for storing URL Shortener project based on `FastAPI`  utilising `uvicorn` web-server and running in `Docker` container
+Repo for storing URL Shortener project based on `FastAPI`  utilizing `uvicorn` web-server and running in `Docker` container. It also uses `SQLite` DB implemented to store URL and related data.
 
+The project itself is created based on the following RealPython tutorial:
+
+https://realpython.com/build-a-python-url-shortener-with-fastapi/
 _________________________________________________________________________________________________________________________________________________________________
 
 
@@ -31,7 +34,6 @@ pydantic
 ---------------
 https://pydantic-docs.helpmanual.io/usage/models/
 
-Redis
+SQLAlchemy
 ---------------
-https://realpython.com/python-redis/
-
+https://www.sqlalchemy.org/docs/

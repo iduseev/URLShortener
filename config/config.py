@@ -1,4 +1,5 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
+
 from functools import lru_cache
 from pydantic import BaseSettings
 
@@ -24,4 +25,3 @@ if __name__ == "__main__":
     base_settings = get_settings()
     print(base_settings.base_url)
     print(base_settings.db_url)
-
