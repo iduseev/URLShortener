@@ -16,6 +16,14 @@ ________________________________________________________________________________
 docker compose up
 ```
 
+## For further development:
+1. Cleanup requirements.txt
+2. Complete SQL DB implementation
+3. Refactor code
+4. Write proper unit tests using pytest
+5. Deploy on Docker container instead of uvicorn
+
+
 ## Documentation used:
 
 
