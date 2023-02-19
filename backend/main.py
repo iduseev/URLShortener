@@ -110,7 +110,7 @@ def show_url_info():
 
 @app.get("/{url_key}")
 def forward_to_target_url(
-    url_key:AnyStr,
+    url_key: AnyStr,
     request: Request,
     db: Session = Depends(get_db)
 ) -> Union[RedirectResponse, NoReturn]:

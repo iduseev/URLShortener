@@ -8,11 +8,12 @@ from . import schemas, models, keygen
 
 
 def create_db_url(db: Session, url: schemas.URLBase) -> models.URL:
-    """_summary_
+    """
+    Creates the database URL entry
 
-    :param db: _description_
+    :param db: Session object of connection to the DB
     :type db: Session
-    :param url: _description_
+    :param url: expected URL from the Client
     :type url: schemas.URLBase
     :return: _description_
     :rtype: models.URL
